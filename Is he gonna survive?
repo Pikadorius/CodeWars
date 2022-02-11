@@ -4,3 +4,8 @@ function hero(bullets, dragons){
    }
   return false;
 }
+
+
+function hero(bullets, dragons){
+  return bullets >= dragons * 2
+}
