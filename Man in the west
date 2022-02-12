@@ -8,3 +8,9 @@ function checkTheBucket(bucket){
    return false;
     //your code here
 }
+
+
+
+function checkTheBucket(bucket){
+  return bucket.includes('gold');
+}
