@@ -1,0 +1,17 @@
+function elevator(left, right, call){
+  if (left==right) {
+    return "right";
+  }
+ else if (call==right) {
+   return "right";
+ }
+  else if (call==left) {
+    return "left";
+  }
+  else if (Math.abs(call-left) >= Math.abs(call-right)) {
+    return "right";
+  }
+  return "left";
+ 
+  // code on! :)
+}
