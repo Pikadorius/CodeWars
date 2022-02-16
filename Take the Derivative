@@ -1,0 +1,5 @@
+function derive(coefficient,exponent) {
+  let count=coefficient*exponent;
+  return count+"x^"+(exponent-1);
+  
+}
