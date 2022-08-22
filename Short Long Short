@@ -1,0 +1,16 @@
+function solution(a, b){
+  let newStr='';
+  if (a.length>b.length) {
+    newStr=b+a+b;
+  }
+  else newStr=a+b+a;
+  return newStr;
+  // your code here
+}
+
+
+
+function solution(a, b){
+  return a.length>b.length?(b+a+b):(a+b+a);
+  // your code here
+}
