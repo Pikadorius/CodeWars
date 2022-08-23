@@ -1,0 +1,13 @@
+function racePodium(blocks) {
+  // your code here
+  let places=[];
+  places[1]=Math.ceil(blocks/3)+1;
+  places[0]=Math.ceil(blocks/3);
+  places[2]=blocks-places[0]-places[1];
+  if(!places[2]) {
+    places[2]=1;
+    places[0]-=1;
+  }
+  console.log(places);
+  return places;
+}
