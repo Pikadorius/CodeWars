@@ -1,0 +1,65 @@
+function rpsls(pl1,pl2){
+//Your Magnificent Code here
+  if(pl1===pl2) {
+    return "Draw!";
+  }
+  else if(pl1==="paper") {
+    switch (pl2) {
+        case "rock":
+        case "spock":
+          return "Player 1 Won!";
+          break;
+        case "lizard":
+        case "scissors":
+        return "Player 2 Won!"
+    }
+  }
+  else if(pl1==="rock") {
+    switch (pl2) {
+        case "scissors":
+        case "lizard":
+          return "Player 1 Won!";
+          break;
+        case "spock":
+        case "paper":
+          return "Player 2 Won!";
+          break;
+    }
+  }
+  else if(pl1==="scissors") {
+    switch (pl2) {
+        case "paper":
+        case "lizard":
+          return "Player 1 Won!";
+          break;
+        case "rock":
+        case "spock":
+          return "Player 2 Won!";
+          break;
+    }
+  }
+  else if(pl1==="lizard") {
+    switch (pl2) {
+        case "paper":
+        case "spock":
+          return "Player 1 Won!";
+          break;
+        case "scissors":
+        case "rock":
+          return "Player 2 Won!";
+          break;
+    }
+  }
+  else if(pl1==="spock") {
+    switch (pl2) {
+        case "scissors":
+        case "rock":
+          return "Player 1 Won!";
+          break;
+        case "lizard":
+        case "paper":
+          return "Player 2 Won!";
+          break;
+    }
+  }
+}
