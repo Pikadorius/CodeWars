@@ -1,0 +1,10 @@
+var number=function(array){
+  //your awesome code here
+  let newArr=[];
+  let oneStr='';
+  for (let i=1; i<=array.length; i++) {
+    oneStr=i+": "+array[i-1];
+    newArr.push(oneStr);
+  }
+  return newArr;
+}
