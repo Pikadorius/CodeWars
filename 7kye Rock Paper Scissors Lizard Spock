@@ -63,3 +63,20 @@ function rpsls(pl1,pl2){
     }
   }
 }
+
+
+_________________________________________________________
+
+function rpsls(pl1, pl2) {
+    if(game[pl1]===game[pl2]) return "Draw!";
+    else if (game[pl1].indexOf(pl2)>=0) return "Player 1 Won!";
+    else return "Player 2 Won!"
+}
+
+const game = {
+    paper: ['rock', 'spock'],
+    rock: ['scissors', 'lizard'],
+    lizard: ['paper', 'spock'],
+    spock: ['scissors', 'rock'],
+    scissors: ['paper', 'lizard'],
+}
