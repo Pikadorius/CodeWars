@@ -1,0 +1,7 @@
+function generateShape(integer){
+  let str='';
+  for (let i=0; i<integer; i++) {
+    str+= "+";
+  }
+  return (str+"\n").repeat(integer-1)+str;
+}
