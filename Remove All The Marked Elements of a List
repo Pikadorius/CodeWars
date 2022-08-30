@@ -23,3 +23,17 @@ Array.prototype.remove_ = function(integer_list, values_list) {
   }
   return newArr;
 }
+ _________________________________________________________
+ 
+ Array.prototype.remove_ = function(integer_list, values_list){
+  //your code here
+  let newArr=[];
+  
+  main: for (let i=0; i<integer_list.length; i++) {
+    for (let j=0; j<values_list.length; j++) {
+      if (values_list[j]===integer_list[i]) continue main;
+    }
+    newArr.push(integer_list[i]);
+  }
+  return newArr;
+}
