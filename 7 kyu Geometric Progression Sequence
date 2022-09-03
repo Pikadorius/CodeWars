@@ -1,0 +1,8 @@
+function geometricSequenceElements(a, r, n){
+  let newArr=[a];
+  for(let i=1; i<n; i++) {
+    newArr[i]=newArr[i-1]*r;
+  }
+  return newArr.join(', ');
+  // Your code here!
+}
