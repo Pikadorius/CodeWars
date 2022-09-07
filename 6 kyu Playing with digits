@@ -1,0 +1,13 @@
+function digPow(n, p){
+ 
+    let sum=String(n).split('').reduce((sum,item)=> {
+    item=Math.pow(item, p)
+    sum+=item;
+    p++;
+    return sum;},0);
+    
+    let divisor=sum/n;
+    
+    return Number.isInteger(divisor)?divisor:-1;
+  
+}
