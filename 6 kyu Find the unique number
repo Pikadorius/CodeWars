@@ -1,0 +1,5 @@
+function findUniq(arr) {
+  // do magic
+  return +arr.filter(item => arr.indexOf(item) === arr.lastIndexOf(item));
+  
+}
