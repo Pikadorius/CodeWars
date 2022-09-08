@@ -1,0 +1,14 @@
+function nbDig(n, d) {
+    // your code
+  let arr=[];
+  for(let i=0; i<=n; i++) {
+    arr.push(i**2);
+  }
+  let newArr=arr.join('').split('');
+  console.log(newArr);
+  
+    return newArr.reduce( (sum, item) => {
+        if (item.includes(String(d))) sum++;
+        return sum;
+    },0);
+}
