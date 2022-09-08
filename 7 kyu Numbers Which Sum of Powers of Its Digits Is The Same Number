@@ -1,0 +1,11 @@
+function eqSumPowdig(hMax, exp) {
+  let arr=[];
+  for(let i=2; i<=hMax; i++) { 
+    let sum=String(i).split('').reduce((sum,item)=> {
+      item=Math.pow(item, exp)
+      sum+=item;
+      return sum;},0);
+    if (sum===i && sum<=hMax) arr.push(sum);
+  }
+   return arr;
+}
