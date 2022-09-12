@@ -1,0 +1,9 @@
+function countPositivesSumNegatives(input) {
+  // your code here
+  if (input==null || input.length==0) return [];
+  else {
+    let count=input.reduce((sum, item)=>item>0?sum+1:sum,0);
+    let sum=input.reduce((sum,item)=>item<0?sum+item:sum,0);
+    return [count,sum];
+    }
+}
