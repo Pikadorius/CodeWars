@@ -1,0 +1,5 @@
+function productArray(numbers){
+  //your code here
+  let all=numbers.reduce((count,i)=>count*i,1);  
+  return numbers.map(item=>all/item);
+}
