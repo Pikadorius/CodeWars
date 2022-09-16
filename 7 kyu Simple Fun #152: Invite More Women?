@@ -1,0 +1,8 @@
+ function inviteMoreWomen(L) {
+  //coding and coding..
+  return L.reduce((sum, w)=> {
+      if (w===-1) sum++;
+      return sum; },0) < L.reduce((sum, m)=> {
+      if (m===1) sum++;
+      return sum; },0);
+}
