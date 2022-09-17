@@ -1,0 +1,6 @@
+function isTriangle(a,b,c)
+{
+   let arr=[a,b,c];
+    let sum=arr.reduce((sum,item)=>sum+item,0);
+  return arr.every(item=>item<sum-item);
+}
