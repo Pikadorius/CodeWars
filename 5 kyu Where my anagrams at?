@@ -15,3 +15,10 @@ function anagrams(word, words) {
   }
   return hooza;
 }
+
+
+_________________________________________SHAME
+
+function anagrams(word, words) {
+  return words.filter(w=>w.split("").sort().join("")===word.split("").sort().join(""));
+}
