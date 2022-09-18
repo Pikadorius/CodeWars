@@ -1,0 +1,8 @@
+function rgb(r, g, b){
+  // complete this function  
+  let arr=[r,g,b].map(x=>x>255?255:x<0?0:x);
+  return arr.map(x=>{
+    let hex=x.toString(16);
+    return hex.length===1?"0"+hex:hex;
+  }).join("").toUpperCase();
+}
