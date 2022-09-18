@@ -1,0 +1,17 @@
+function anagrams(word, words) {
+  let testArr=word.split("").sort().join("");
+  let testedArr=words.map(x=>x.split("").sort().join(""));
+  console.log(testArr);
+  console.log(testedArr);
+  let result=testedArr.map((item,index,)=>{
+    if(item===testArr) return index;
+    else return 'no';
+  }).filter(i=>i!=='no');
+  console.log(result);
+  
+  let hooza=[];
+  for(let i=0; i<result.length; i++) {
+    hooza.push(words[result[i]]);
+  }
+  return hooza;
+}
