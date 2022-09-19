@@ -1,0 +1,8 @@
+function dotCalculator (equation) {
+  let str=equation.split(" "||" "||" "||" ");
+  console.log(str, str[0].length,str[2].length);
+  if(str[1]=="+") return '.'.repeat(str[0].length+str[2].length);
+  else if(str[1]=="-") return '.'.repeat(str[0].length-str[2].length);
+  else if(str[1]=="*") return '.'.repeat(str[0].length*str[2].length);
+  else if(str[1]=="//") return '.'.repeat(str[0].length/str[2].length);
+}
