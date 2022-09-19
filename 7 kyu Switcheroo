@@ -1,0 +1,4 @@
+function switcheroo(x){
+  return x.split('').map(item=>item=="c"?"c":item==="a"?"b":"a").join("");
+  
+}
