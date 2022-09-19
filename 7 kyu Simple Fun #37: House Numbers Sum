@@ -1,0 +1,6 @@
+function houseNumbersSum(inputArray) {
+  //coding and coding..
+  if(inputArray[0]===0) return 0;
+   return inputArray.join(" ").split(" 0 ")[0].split(" ").reduce((x,y)=>x+Number(y),0);
+  
+}
