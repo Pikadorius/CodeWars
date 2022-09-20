@@ -1,7 +1,7 @@
 function humanReadable (seconds) {
-  let hours=Math.floor(seconds/3600)+"";
-  let minutes=Math.floor((seconds-hours*3600)/60)+"";
-  let sec=(seconds-minutes*60-hours*3600)+"";
-  let arr=[hours, minutes, sec];
+  let hours = Math.floor(seconds/3600)+"";
+  let minutes = Math.floor((seconds-hours*3600)/60)+"";
+  let sec = (seconds-minutes*60-hours*3600)+"";
+  let arr = [hours, minutes, sec];
    return arr.map(x=>x.length===1?"0"+x:x).join(":");
 }
