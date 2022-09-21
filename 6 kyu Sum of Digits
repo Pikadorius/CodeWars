@@ -1,0 +1,10 @@
+function digitalRoot(n) {
+  // ...
+  if (n<10) return n;
+  else {
+    while (n>9) {
+      n=String(n).split("").reduce((x,y)=>x+Number(y),0);
+    }
+    return n;
+  }
+}
