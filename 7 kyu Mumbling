@@ -1,0 +1,8 @@
+function accum(s) {
+	// your code
+  return s.toLowerCase()
+         .split("")
+         .map((item, index)=>item.repeat(index+1))
+         .map(x=>x[0].toUpperCase()+x.slice(1))
+         .join("-");
+}
