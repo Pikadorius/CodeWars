@@ -1,0 +1,11 @@
+function duplicateCount(text){
+  //...
+  let arr=text.toLowerCase().split("");
+  let testArr=text.toLowerCase().split("").filter(x=>arr.indexOf(x)!=arr.lastIndexOf(x));
+  let result=[];
+  for(let i=0;i<testArr.length;i++) {
+    if (result.includes(testArr[i])) continue;
+    else result.push(testArr[i]);
+  }
+  return result.length;
+}
