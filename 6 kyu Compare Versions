@@ -7,8 +7,8 @@ function compareVersions (version1, version2) {
   console.log(maxLength);
   
   for(let i=0; i<maxLength; i++) {
-    if(v1[i]===undefined) v1[i]=0;
-    if(v2[i]===undefined) v2[i]=0;
+    if(v1[i] === undefined) v1[i]=0;
+    if(v2[i] === undefined) v2[i]=0;
   }
   
   console.log(v1, v2);
