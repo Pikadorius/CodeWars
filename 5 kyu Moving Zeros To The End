@@ -7,7 +7,6 @@ function moveZeros(arr) {
   return newArr;
 }
 
-
 ____________________________________
 
 function moveZeros(arr) {
