@@ -7,5 +7,5 @@ function arrayPlusArray(arr1, arr2) {
    for (i=0; i<arr2.length; i++) {
     count2 += arr2[i];
     }
-  return count1 + count2; //something went wrong
+  return count1 + count2;
 }
