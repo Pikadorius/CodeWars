@@ -1,0 +1,7 @@
+function sc(apple){
+  for(let i=0; i<apple.length; i++) {
+    let j=apple[i].findIndex(x=>x==="B");
+    if (j===-1) continue;
+    else return [i,j];
+  }
+}
