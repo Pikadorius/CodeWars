@@ -1,11 +1,1 @@
-function hero(bullets, dragons){
- if (bullets>=dragons*2) {
-   return true;//Get Coding!
-   }
-  return false;
-}
-
-
-function hero(bullets, dragons){
-  return bullets >= dragons * 2
-}
+let hero = (bullets, dragons) => bullets >= dragons * 2;
