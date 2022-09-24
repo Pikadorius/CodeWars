@@ -1,5 +1,4 @@
 function findNeedle(haystack) {
-  // your code here
   let index=haystack.findIndex(item=>item==="needle");
   console.log(index);
   return `found the needle at position ${index}`;
