@@ -1,0 +1,10 @@
+function getDivisorsCnt(n){
+    // todo
+  let divisors=0;
+  for(let i=0;i<=n;i++) {
+    {
+      if(Number.isInteger(n/i)) divisors++;
+    }
+  }
+  return divisors;
+}
