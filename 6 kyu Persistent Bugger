@@ -1,0 +1,12 @@
+function persistence(num) {
+   //code me
+  if (num<10) return 0;
+  else {
+    let count=0;
+    while (num>9) {
+      num=+String(num).split("").reduce((x,y)=>x*Number(y),1);
+      count++;
+    }
+    return count;
+  }
+}
