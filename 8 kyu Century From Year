@@ -1,4 +1,3 @@
 function century(year) {
-  let cent=Math.ceil(year/100);// Finish this :)
-  return cent;
+  return Math.ceil(year/100);
 }
