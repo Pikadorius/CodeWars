@@ -1,5 +1,4 @@
 function spEng(sentence){
   let name=sentence.toUpperCase();
   return name.includes("ENGLISH");
-//write your code here
 }
