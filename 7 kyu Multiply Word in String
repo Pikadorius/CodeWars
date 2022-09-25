@@ -1,10 +1,7 @@
 function modifyMultiply (str,loc,num) {
-//Code here
   let word=str.split(" ")[loc];
   let arr=[];
   arr.length=num;
   arr.fill(word);
   return arr.join("-");
-  
-  
 } 
