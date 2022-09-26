@@ -1,0 +1,8 @@
+function duplicateEncode(word){
+    // ...
+  let arr=word.toLowerCase().split("");
+  return arr.map(x=>{
+    if (arr.filter(item=>item==x).length>1) return ")";
+    else return "(";
+  }).join("");
+}
