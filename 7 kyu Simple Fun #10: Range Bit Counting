@@ -1,0 +1,8 @@
+function rangeBitCount(a, b) {
+  //coding and coding..
+  let arr=[];
+  for(let i=a;i<=b;i++) {
+    arr.push(i);
+  }
+  return arr.map(x=>x.toString(2)).join("").split("").filter(x=>x=="1").length;
+}
