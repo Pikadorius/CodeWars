@@ -1,0 +1,9 @@
+function isValidWalk(walk) {
+  //insert brilliant code here
+  let west=walk.filter(x=>x=="w").length;
+  let east=walk.filter(x=>x=="e").length;
+  let south=walk.filter(x=>x=="s").length;
+  let north=walk.filter(x=>x=="n").length;
+  console.log(west, east, south, north);
+  return ((west-east)==0 && (south-north)==0 && west+east+south+north==10);
+}
