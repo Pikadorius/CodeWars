@@ -1,0 +1,20 @@
+function kaCokadekaMe(word) {
+    let cypher = 'ka'
+    return word.split('').reduce((sum, l, i) => {
+        if (test(word[i])) {
+            if (test(word[i]) === test(word[i+1]) || i === word.length - 1) {
+                return sum + word[i]
+            } else {
+                return sum + word[i] + cypher
+            }
+        } else {
+            return sum + word[i]
+        }
+    }, cypher)
+}
+
+let reg = /[aeiou]/i
+
+const test = (symbol) => {
+    return reg.test(symbol)
+}
