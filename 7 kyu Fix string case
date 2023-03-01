@@ -1,0 +1,11 @@
+function solve(s) {
+    let arr=s.split('')
+    let upperCount = 0
+    for (let i=0; i<arr.length; i++) {
+      if (arr[i]===arr[i].toUpperCase()) {
+        upperCount++
+      }
+    }
+  if (upperCount>arr.length/2) return s.toUpperCase()
+  else return s.toLowerCase()
+}
