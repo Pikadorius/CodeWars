@@ -1,0 +1,9 @@
+function arithmeticSequenceElements(a, d, n) {
+	let arr=[""+a]
+  for (let i=1; i<n; i++) {
+    a+=d
+    arr.push(""+a)
+    
+  }
+  return arr.join(", ")
+}
